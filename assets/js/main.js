@@ -66,3 +66,17 @@ function resumeDownload() {
     "_blank"
   );
 }
+
+// Github Calander
+GitHubCalendar(".calendar", "ShubhKeshari");
+
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "ShubhKeshari", { responsive: true });
+
+// Use a proxy
+GitHubCalendar(".calendar", "ShubhKeshari", {
+   proxy (username) {
+     return fetch(`https://your-proxy.com/github?user=${username}`)
+    }
+});
+
