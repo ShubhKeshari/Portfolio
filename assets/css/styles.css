@@ -154,8 +154,7 @@ img {
 }
 
 .nav__logo {
-  color: var(--first-color);
-  font-size: 1.5rem;
+  max-width: 8rem;
 }
 
 .nav__toggle {
@@ -285,18 +284,21 @@ img {
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
-
-.skills__icon {
-  font-size: 6rem;
-  color: var(--first-color);
-}
-
 .skills__names {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap:16px
 }
+.skills__icon {
+  font-size: 6rem;
+  max-width:3.5rem;
+  padding-top:1rem;
+  color: var(--first-color);
+}
+
+
 
 .card {
   position: relative;
