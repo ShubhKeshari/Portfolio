@@ -16,8 +16,8 @@
     />
     <!-- TypedJS -->
     <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <!-- Github Calander -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
@@ -565,6 +565,10 @@
             class="react-activity-calendar calendar"
             style="width: 100%"
           ></div>
+          <img
+            src="https://github-readme-activity-graph.vercel.app/graph?username=ShubhKeshari&bg_color=151515&color=a67025&line=a67025&point=f5a536&area=true&hide_border=true"
+            alt=""
+          />
         </div>
       </section>
 
@@ -573,19 +577,36 @@
       <section class="section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact">
-          <form class="form">
+          <form
+            class="form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            
+          >
             <h2>CONTACT US</h2>
-            <p type="Name:"><input type="text" required /></p>
-            <p type="Email:"><input type="email" required /></p>
-            <p type="Message:">
-              <input type="text" required />
+            <input
+              type="hidden"
+              name="access_key"
+              value="c7cb0f72-41b6-477b-9f43-2cfccfe88cf4"
+            />
+            <p type="Name:">
+              <input type="text" name="name" id="name" required />
             </p>
-            <button type="submit">Send Message</button>
+            <p type="Email:">
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p type="Message:">
+              <textarea name="message" id="message" required></textarea>
+            </p>
+            <div class="h-captcha" data-captcha="true"></div>
+            <button type="submit" id="submit">Send Message</button>
           </form>
         </div>
       </section>
     </main>
 
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <!--===== FOOTER =====-->
     <footer class="footer">
       <p class="footer__title">Connect With Me</p>
