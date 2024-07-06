@@ -62,7 +62,7 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
 function resumeDownload() {
   window.open(
-    "https://drive.google.com/file/d/1Ox_X0asQEwNQ9TX1wuSxrPZIVCuVlKpl/view?usp=sharing",
+    "https://drive.google.com/file/d/10jMkOa615LN0h3n5YAIhOYZ4np_FnQZ_/view?usp=drive_link",
     "_blank"
   );
 }
